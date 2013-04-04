@@ -1,0 +1,159 @@
+function OAS_RICH(position) {
+if (position == 'Top') {
+document.write ('<script type="text/javascript">\n');
+document.write ('    var wr_host    = "aimfar";\n');
+document.write ('    var wr_site      = 196;\n');
+document.write ('    var wr_page      = 4588;\n');
+document.write ('    var wr_board     = 10415;\n');
+document.write ('    var wr_boardsize = "1x1";\n');
+document.write ('    var wr_autofit   = 10415;\n');
+document.write ('    var wr_floating  = 1;\n');
+document.write ('    var wr_detail    = ');
+document.write ("'");
+document.write ('');
+document.write ("'");
+document.write (';\n');
+document.write ('    var wr_thema     = 0;\n');
+document.write ('</script>\n');
+document.write ('<script type="text/javascript" src="http://cstatic.weborama.fr/js/publisher/customers/aimfar.js"></script>\n');
+document.write (' ');
+}
+if (position == 'Right') {
+document.write ('<!--/* CAST Tag Javascript v2.6.2 */-->\n');
+document.write ('\n');
+document.write ('<script type=');
+document.write ("'");
+document.write ('text/javascript');
+document.write ("'");
+document.write ('><!--//<![CDATA[\n');
+document.write ('   document.MAX_ct0 =');
+document.write ("'");
+document.write ('http://ba.ccm2.net/RealMedia/ads/click_lx.ads/fr_ccm_droit-finances/legifrance/L32/1147594864/Right/OasDefault/df_criteo_ppage_rg_2011/300x250.html/567453484d45365a71366f4142763137?');
+document.write ("'");
+document.write (';\n');
+document.write ('\n');
+document.write ('   var m3_u = (location.protocol==');
+document.write ("'");
+document.write ('https:');
+document.write ("'");
+document.write ('?');
+document.write ("'");
+document.write ('https://cas.criteo.com/delivery/ajs.php');
+document.write ("'");
+document.write (':');
+document.write ("'");
+document.write ('http://cas.criteo.com/delivery/ajs.php');
+document.write ("'");
+document.write (');\n');
+document.write ('   var m3_r = Math.floor(Math.random()*99999999999);\n');
+document.write ('   if (!document.MAX_used) document.MAX_used = ');
+document.write ("'");
+document.write (',');
+document.write ("'");
+document.write (';\n');
+document.write ('   document.write ("<scr"+"ipt type=');
+document.write ("'");
+document.write ('text/javascript');
+document.write ("'");
+document.write (' src=');
+document.write ("'");
+document.write ('"+m3_u);\n');
+document.write ('   document.write ("?zoneid=13910");\n');
+document.write ('   document.write (');
+document.write ("'");
+document.write ('&amp;cb=');
+document.write ("'");
+document.write (' + m3_r);\n');
+document.write ('   if (document.MAX_used != ');
+document.write ("'");
+document.write (',');
+document.write ("'");
+document.write (') document.write ("&amp;exclude=" + document.MAX_used);\n');
+document.write ('   document.write (document.charset ? ');
+document.write ("'");
+document.write ('&amp;charset=');
+document.write ("'");
+document.write ('+document.charset : (document.characterSet ? ');
+document.write ("'");
+document.write ('&amp;charset=');
+document.write ("'");
+document.write ('+document.characterSet : ');
+document.write ("'");
+document.write ('');
+document.write ("'");
+document.write ('));\n');
+document.write ('   document.write ("&amp;loc=" + escape(window.location));\n');
+document.write ('   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));\n');
+document.write ('   if (document.context) document.write ("&context=" + escape(document.context));\n');
+document.write ('   if ((typeof(document.MAX_ct0) != ');
+document.write ("'");
+document.write ('undefined');
+document.write ("'");
+document.write (') && (document.MAX_ct0.substring(0,4) == ');
+document.write ("'");
+document.write ('http');
+document.write ("'");
+document.write (')) {\n');
+document.write ('       document.write ("&amp;ct0=" + escape(document.MAX_ct0));\n');
+document.write ('   }\n');
+document.write ('   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");\n');
+document.write ('   document.write ("');
+document.write ("'");
+document.write ('><\\');
+document.write ('/scr"+"ipt>");\n');
+document.write ('//]]>--></script>');
+}
+if (position == 'Position1') {
+document.write ('<a href="http://ba.ccm2.net/5c/fr_ccm_droit-finances/legifrance/1538540123/Position1/default/empty.gif/567453484d45365a71366f4142763137" target="_top"><img src="http://ba.ccm2.net/0/default/empty.gif"  width="1" height="1" alt="" BORDER=0 border="0"></a>');
+}
+if (position == 'Position2') {
+document.write ('<img src="http://ftn.eulerian.net/view/fortuneo/FM00dv2ebE1zZBUcZ5rH8aITPluQit9_Oj.d/pix.gif?ea-rnd=1362600251" border="0" width="1" height="1" />\n');
+document.write ('\n');
+document.write ('<script type="text/javascript" src="http://www.linternaute.com/include/javascript/publi_info.js"></script>\n');
+document.write ('<div class="publi-info">\n');
+document.write ('    <div class="corps">\n');
+document.write ('        <a href="http://ba.ccm2.net/RealMedia/ads/click_lx.ads/fr_ccm_droit-finances/legifrance/L32/1362600251/Position2/OasDefault/cpc_fortuneo_txt_bench_1253-4/cpc_fortuneo_txt_bench_gold_1253-4.html/567453484d45365a71366f4142763137?" target="_blank"><img src="http://ba.ccm2.net/RealMedia/ads/Creatives/OasDefault/cpc_fortuneo_txt_bench_1253-4/90x30_gold.gif" alt="" border="0"></a>\n');
+document.write ('        <h2><b><a href="http://ba.ccm2.net/RealMedia/ads/click_lx.ads/fr_ccm_droit-finances/legifrance/L32/1362600251/Position2/OasDefault/cpc_fortuneo_txt_bench_1253-4/cpc_fortuneo_txt_bench_gold_1253-4.html/567453484d45365a71366f4142763137?" target="_blank">Fortuneo</a></b></h2>\n');
+document.write ('        <p>Gold gratuite et 80&euro; offerts avec Fortuneo, la banque en ligne moins ch&egrave;re.<br><br>\n');
+document.write ('<b><a href="http://ba.ccm2.net/RealMedia/ads/click_lx.ads/fr_ccm_droit-finances/legifrance/L32/1362600251/Position2/OasDefault/cpc_fortuneo_txt_bench_1253-4/cpc_fortuneo_txt_bench_gold_1253-4.html/567453484d45365a71366f4142763137?" target="_blank">Elu Service Client de l');
+document.write ("'");
+document.write ('Ann&eacute;e 2012</a></b></p>\n');
+document.write ('    </div>\n');
+document.write ('    <h6><span>Publi-info</span></h6>\n');
+document.write ('</div>');
+}
+if (position == 'Position3') {
+document.write ('<a href="http://ba.ccm2.net/5c/fr_ccm_droit-finances/legifrance/965596623/Position3/default/empty.gif/567453484d45365a71366f4142763137" target="_top"><img src="http://ba.ccm2.net/0/default/empty.gif"  width="1" height="1" alt="" BORDER=0 border="0"></a>');
+}
+if (position == 'Position4') {
+document.write ('<!-- BOX PARTENAIRES -->\n');
+document.write ('\n');
+document.write ('<div class="asideBox slider">\n');
+document.write ('    <div class="boxTitle">\n');
+document.write ('        Publicit&eacute; partenaires\n');
+document.write ('    </div>\n');
+document.write ('\n');
+document.write ('<!-- Fortuneo 1331-1 - GOLD -->\n');
+document.write ('\n');
+document.write ('<img src="http://ftn.eulerian.net/view/fortuneo/FM00dv2ebE1zZBV_xROoAjiDHz9R21Z9VodJ/pix.gif?ea-rnd=1133545537" border="0" width="1" height="1" />\n');
+document.write ('\n');
+document.write ('<div num="0" class="content">\n');
+document.write ('<a class="img" href="http://ba.ccm2.net/RealMedia/ads/click_lx.ads/fr_ccm_droit-finances/legifrance/L32/1133545537/Position4/OasDefault/df_box_partner_2011/ccm-df_bforbank_box2_8077.html/567453484d45365a71366f4142763137?http://redirection.benchmark.fr/43026/" target="_blank" style=" padding:0; width:110px; height:50px; background: transparent url(http://ba.ccm2.net/RealMedia/ads/Creatives/OasDefault/df_box_partner_2011/110x50_gold.gif) no-repeat 50% 50%"> \n');
+document.write ('<img alt="" src="http://www.commentcamarche.net/img/pixeltransparent.gif" /> \n');
+document.write ('</a> \n');
+document.write ('<a href="http://ba.ccm2.net/RealMedia/ads/click_lx.ads/fr_ccm_droit-finances/legifrance/L32/1133545537/Position4/OasDefault/df_box_partner_2011/ccm-df_bforbank_box2_8077.html/567453484d45365a71366f4142763137?http://redirection.benchmark.fr/43026/" target="_blank" style="float:left; padding-top:3px; width:150px"><strong>Gold gratuite et 80&euro; offerts avec Fortuneo !</strong></a> \n');
+document.write ('<div class="clear"></div> \n');
+document.write ('</div>\n');
+document.write ('\n');
+document.write ('</div>');
+}
+if (position == 'x01') {
+document.write ('<a href="http://ba.ccm2.net/5c/fr_ccm_droit-finances/legifrance/1877325517/x01/default/empty.gif/567453484d45365a71366f4142763137" target="_top"><img src="http://ba.ccm2.net/0/default/empty.gif"  width="1" height="1" alt="" BORDER=0 border="0"></a>');
+}
+if (position == 'x02') {
+document.write ('<a href="http://ba.ccm2.net/5c/fr_ccm_droit-finances/legifrance/378808628/x02/default/empty.gif/567453484d45365a71366f4142763137" target="_top"><img src="http://ba.ccm2.net/0/default/empty.gif"  width="1" height="1" alt="" BORDER=0 border="0"></a>');
+}
+if (position == 'TopLeft') {
+document.write ('<a href="http://ba.ccm2.net/5c/fr_ccm_droit-finances/legifrance/1986946983/TopLeft/default/empty.gif/567453484d45365a71366f4142763137" target="_top"><img src="http://ba.ccm2.net/0/default/empty.gif"  width="1" height="1" alt="" BORDER=0 border="0"></a>');
+}
+}

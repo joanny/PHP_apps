@@ -1,0 +1,381 @@
+Ôªø <div id="vue2">
+ <?php
+ 
+  if(!empty($lesErreurs)){
+	 foreach ( $lesErreurs  as $uneErreur )
+	 {
+?>
+		 <table>
+			 <th align="center">
+				<h3>*</h3>
+			 </th>
+			 <th align="center">
+				<h5><?php echo @$uneErreur;?></h5>
+			 </th>
+		  </table>
+	 <?php
+	 }
+	 }
+ ?> 
+ 
+
+<form  id="myForm" method="post" action="index.php?uc=administrer&action=validerInscriptionUtilisateur">
+<?php if( $modiUtilisateur = true)
+	{ 
+?>
+	
+ <TABLE  height= "90px" width="980px" >
+<TR>
+  <TD width ="120px" rowspan="2"></TD> 
+  <TD> <div align="left"> 
+  <label class="form_col" for="nom"> <strong><c2 class="texte">nom </label>
+  <input name="nom" id="nom" type="text"  value="<?php echo @$_SESSION['nom_utilisateur'];?>"/>
+  <span class="tooltip"> Un nom ne peut pas faire moins de 2 caract√®res</span>
+	  
+ 
+  <TR>
+  <TD><div align="left">  <label class="form_col" for="prenom"><strong> <c2 class="texte">prenom</label>
+            <input name="prenom" id="prenom" type="text" value="<?php echo @$_SESSION['prenom']; ?>" />	
+      <span class="tooltip">Un pr√©nom ne peut pas faire moins de 2 caract√®res</span> </TD> 
+</TR>
+  <TD rowspan="2"></td>
+  <TD><label class="form_col" for="prenom"><strong><c2 class="texte">rue</label>
+  <input id="rue" type="text" name="rue" value="<?php echo @$_SESSION['rue']; ?>"  size="30" maxlength="45">
+			 <span class="tooltip">Vous devez s√©lectionner votre pays de r√©sidence</span>  </TD>  
+	 
+  <TR><TD> <label class="form_col" for="ville"><strong><c2 class="texte">ville</label>
+         <input id="ville" type="text" name="ville" value="<?php echo @$_SESSION['ville']; ?>"   size="5" maxlength="5">
+		  <span class="tooltip">Vous devez s√©lectionner votre pays de r√©sidence</span>   </TD>  </TR>
+	 
+ <TR> <TD width ="150px" rowspan="2"></TD>
+ <td>  <label class="form_col" for="code_postale"><strong><c2 class="texte">code postale</label>
+ <input id="code_postale" type="text" name="code_postale"  value="<?php echo @$_SESSION['code_postale']; ?>" size="10" maxlength="10">
+    	   <span class="tooltip">Vous devez s√©lectionner votre pays de r√©sidence</span>
+</td></TR>
+  <TR>
+  <TR>
+  <TD rowspan="2"></td>
+  <TD> <label class="form_col" for="pays"><strong><c2 class="texte">pays </label>
+		 <select name="pays" > 
+							<option value="France" selected="selected">France </option>
+							<option value="Afghanistan">Afghanistan </option>
+							<option value="Afrique_Centrale">Afrique_Centrale </option>
+							<option value="Afrique_du_sud">Afrique_du_Sud </option> 
+							<option value="Albanie">Albanie </option>
+							<option value="Algerie">Algerie </option>
+							<option value="Allemagne">Allemagne </option>
+							<option value="Andorre">Andorre </option>
+							<option value="Angola">Angola </option>
+							<option value="Anguilla">Anguilla </option>
+							<option value="Arabie_Saoudite">Arabie_Saoudite </option>
+							<option value="Argentine">Argentine </option>
+							<option value="Armenie">Armenie </option> 
+							<option value="Australie">Australie </option>
+							<option value="Autriche">Autriche </option>
+							<option value="Azerbaidjan">Azerbaidjan </option>
+		 </select> 
+		 <span class="tooltip">Vous devez s√©lectionner votre pays de r√©sidence</span>
+</TD>  <TR>
+  <TD> 
+	  </TD>  </TR></TR>
+  </TR>
+  <TR>
+  <TD rowspan="2"></td>
+  <TD> <label class="form_col" for="date_naissance"><strong><c2 class="texte">date de naissance (jj/mm/aaaa) </label>
+       
+		<select name ="jour">
+				<option value="01">1</option>
+				<?php for ( $i = 2 ; $i <= 31 ; $i++)
+				{
+				?>
+				  <option value="<?php echo $i ?>"><?php echo $i ?></option>
+				<?php
+				}
+				?>
+		</select>		
+		<select name ="mois">
+					<option value="1"><c2 class="texte">Janvier</option>
+					<option value="2"><c2 class="texte">F√©vrier</option> 
+					<option value="3"><c2 class="texte">Mars</option>
+					<option value="4"><c2 class="texte">Avril</option> 
+					<option value="5"><c2 class="texte">Mai</option>
+					<option value="6"><c2 class="texte">Juin</option> 
+					<option value="7"><c2 class="texte">Juillet</option>
+					<option value="8"><c2 class="texte">Aout</option> 
+					<option value="9"><c2 class="texte">Septembre</option>
+					<option value="10"><c2 class="texte">Octobre</option> 
+					<option value="11"><c2 class="texte">Novembre</option>
+					<option value="12"><c2 class="texte">D√©cembre</option> 		
+		</select>
+	    	<select name = "annee" >
+				 <option value="1975">1975</option>
+				<?php for ( $i = 1976 ; $i <= 2005 ; $i++)
+				{
+				?>
+				  <option value="<?php echo $i ?>"><?php echo $i ?></option>
+				<?php
+				}
+				?>		 
+			</select> 	
+		 <TR>
+  <TD><label class="form_col" for="adresse_mail"><strong><c2 class="texte">adresse √©lectronique </label>
+         <input id="mail" type="text"  name="mail" value="<?php echo @$_SESSION['adresse_electronique']; ?>"  size ="25" maxlength="25"> 
+    </TD>  </TR></TR>
+   <TR>
+  <TD rowspan="2"></td>
+  <TD><label class="form_col" for="mot_de_passe"><strong><c2 class="texte">Mot de passe :</label>  
+  <input name="mot_de_passe" id="mot_de_passe" type="password" />
+      <span class="tooltip">Le mot de passe ne doit pas faire moins de 6 caract√®res</span> 
+
+	</TD>
+  </TD>  <TR>
+  <TD>   <label class="form_col" for="mot_de_passe2"> <strong><c2 class="texte">mot de passe :</label> 
+  <input name="mot_de_passe2" id="mot_de_passe2" type="password" />
+  <span class="tooltip">Les mot de passes doivent √™tre identiques</span>
+		</TD>  </TR></TR>
+   <TR>
+  <TD  rowspan="2"></td>
+  <td> <br></td>  <tr>
+  <td> </td>  </tr></tr>
+  <tr>
+   <tr>
+  <TD  rowspan="2"></td>
+  <TD> <span class="form_col"></span>
+  <label><input name="news" type="checkbox" /><strong><c2 class="texte">Je d√©sire recevoir la newsletter chaque mois.</label></TD>  <TR>
+  <TD><div align="center"><input type="submit" value="Valider" /> <input type="reset" value="R√©initialiser le formulaire" /></TD>  </TR></TR>
+  <TR>
+  </TR>
+  </TR> 
+</TR>		
+</TABLE>
+ <a  onClick="history.back()" ><c2 class="texte"><h2>Pr√©cedent</h2></a>
+<?php
+}
+?>
+<script>
+// Fonction de d√©sactivation de l'affichage des "tooltips"
+
+function deactivateTooltips() {
+
+  var spans = document.getElementsByTagName('span'),
+      spansLength = spans.length;
+
+  for (var i = 0 ; i < spansLength ; i++) {
+    if (spans[i].className == 'tooltip') {
+      spans[i].style.display = 'none';
+    }
+  }
+
+}
+
+
+// La fonction ci-dessous permet de rÈcupÈrer la "tooltip" qui correspond ‡ notre input
+
+function getTooltip(el) {
+
+  while (el = el.nextSibling) {
+    if (el.className == 'tooltip') {
+      return el;
+    }
+  }
+
+  return false;
+
+}
+
+
+// Fonctions de vÈrification du formulaire, elles renvoient "true" si tout est ok
+
+var check = {}; // On met toutes nos fonctions dans un objet littÈral
+
+ 
+
+check['nom'] = function(id) {
+
+  var name = document.getElementById(id),
+      tooltipStyle = getTooltip(name).style;
+
+  if (name.value.length >= 2) {
+    name.className = 'correct';
+    tooltipStyle.display = 'none';
+    return true;
+  } else {
+    name.className = 'incorrect';
+    tooltipStyle.display = 'inline-block';
+    return false;
+  }
+
+};
+
+check['prenom'] = check['nom'];  
+check['rue'] = check['nom'];
+check['ville'] = check['nom'];
+check['age'] = function() {
+
+  var age = document.getElementById('age'),
+      tooltipStyle = getTooltip(age).style,
+      ageValue = parseInt(age.value);
+
+  if (!isNaN(ageValue) && ageValue >= 5 && ageValue <= 140) {
+    age.className = 'correct';
+    tooltipStyle.display = 'none';
+    return true;
+  } else {
+    age.className = 'incorrect';
+    tooltipStyle.display = 'inline-block';
+    return false;
+  }
+
+};
+
+check['login'] = function() {
+
+  var login = document.getElementById('login'),
+      tooltipStyle = getTooltip(login).style;
+
+  if (login.value.length >= 4) {
+    login.className = 'correct';
+    tooltipStyle.display = 'none';
+    return true;
+  } else {
+    login.className = 'incorrect';
+    tooltipStyle.display = 'inline-block';
+    return false;
+  }
+
+};
+
+check['mot_de_passe'] = function() {
+
+  var mot_de_passe = document.getElementById('mot_de_passe'),
+      tooltipStyle = getTooltip(mot_de_passe).style;
+
+  if (mot_de_passe.value.length >= 6) {
+    mot_de_passe.className = 'correct';
+    tooltipStyle.display = 'none';
+    return true;
+  } else {
+    mot_de_passe.className = 'incorrect';
+    tooltipStyle.display = 'inline-block';
+    return false;
+  }
+
+};
+
+check['mot_de_passe2'] = function() {
+
+  var mot_de_passe = document.getElementById('mot_de_passe'),
+      mot_de_passe2 = document.getElementById('mot_de_passe2'),
+      tooltipStyle = getTooltip(mot_de_passe2).style;
+
+  if (mot_de_passe.value == mot_de_passe2.value && mot_de_passe2.value != '') {
+    mot_de_passe2.className = 'correct';
+    tooltipStyle.display = 'none';
+    return true;
+  } else {
+    mot_de_passe2.className = 'incorrect';
+    tooltipStyle.display = 'inline-block';
+    return false;
+  }
+
+};
+check['code_postale'] = function() {
+
+  var code_postale = document.getElementById('code_postale'),
+      tooltipStyle = getTooltip(code_postale).style,
+      code_postaleValue = parseInt(code_postale.value);
+
+  if (code_postale.value.length == 5)   {
+    code_postale.className = 'correct';
+    tooltipStyle.display = 'none';
+   return true;
+  } else {
+    code_postale.className = 'incorrect';
+    tooltipStyle.display = 'inline-block';
+     return false;
+  }
+
+};
+check['pays'] = function() {
+
+  var pays = document.getElementById('pays'),
+      tooltipStyle = getTooltip(pays).style;
+
+  if (pays.options[pays.selectedIndex].value != 'none') {
+    tooltipStyle.display = 'none';
+    return true;
+  } else {
+    tooltipStyle.display = 'inline-block';
+    return false;
+  }
+
+};
+check['date_naisssance'] = function() {
+  var pays = document.getElementById('date_naissance'),
+      tooltipStyle = getTooltip(pays).style;
+
+  if (pays.options[pays.selectedIndex].value != 'none') {
+    tooltipStyle.display = 'none';
+    return true;
+  } else {
+    tooltipStyle.display = 'inline-block';
+    return false;
+  }
+
+};
+
+
+
+// Mise en place des ÈvÈnements
+
+(function() { // Utilisation d'une fonction anonyme pour Èviter les variables globales.
+
+  var myForm = document.getElementById('myForm'),
+        inputs = document.getElementsByTagName('input'),
+        inputsLength = inputs.length;
+
+  for (var i = 0 ; i < inputsLength ; i++) {
+    if (inputs[i].type == 'text' || inputs[i].type == 'password') {
+
+      inputs[i].onkeyup = function() {
+        check[this.id](this.id); // "this" reprÈsente l'input actuellement modifiÈ
+      };
+
+    }
+  }
+
+  myForm.onsubmit = function() {
+    
+    var result = true;
+
+    for (var i in check) {
+      result = check[i](i) && result;
+    }
+
+    if (result) {
+      alert('Le formulaire est bien rempli.');
+    }
+
+    return false;
+  
+  };
+
+  myForm.onreset = function() {
+    
+    for (var i = 0 ; i < inputsLength ; i++) {
+      if(inputs[i].type == 'text' || inputs[i].type == 'password') {
+      inputs[i].className = '';
+      }
+    }
+
+    deactivateTooltips();
+  
+  };
+
+})();
+
+
+// Maintenant que tout est initialisÈ, on peut dÈsactiver les "tooltips"
+
+deactivateTooltips();
+</script>

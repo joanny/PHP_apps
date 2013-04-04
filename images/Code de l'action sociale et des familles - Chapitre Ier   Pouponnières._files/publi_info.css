@@ -1,0 +1,15 @@
+ /* publi-info generique */
+.publi-info {width:100%; margin:10px 0;clear:both;}
+.publi-info .corps { background:#e5eeff;font-size:12px;padding:10px 10px 5px 0;display:block;float:left; /*width:472px;*/ text-align: left; margin:0;}
+.publi-info img { float:right;margin-bottom:5px;margin-right:5px;}
+.publi-info h2 { margin:0;padding:0;font-size:12px;padding-left:10px;color:#cc0044; }
+.publi-info p { padding-left:10px; }
+.publi-info a.suite  { white-space: nowrap;font-weight:bold;color:#000;text-decoration:underline;background:url(http://www.linternaute.com/sante/breve/image/objsommaire/flecher.gif) 0 5px no-repeat;padding-left:10px; }
+.publi-info a.suite:hover { text-decoration:none }
+.publi-info h6 {background:transparent; /*width:462px;*/ margin:0;padding:0;padding:0 0 0 20px;text-align:right;font-size:10px;font-weight:normal;}
+.publi-info h6 span{ padding:0px 10px 0px 20px; }
+.publi-info h6 span { background-color:#e5eeff;background-image:url(http://www.linternaute.com/image/publi-info/fond_publi-info.gif);background-position:bottom left;background-repeat:no-repeat;color:#adc1e2;}
+/* affichage du bloc en colonne de droite */
+#droite .publi-info .corps {width:290px;}
+#droite .publi-info h6 {width:280px;}
+

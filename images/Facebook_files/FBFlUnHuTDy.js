@@ -1,0 +1,5 @@
+/*1322474713,176833978*/
+
+if (window.CavalryLogger) { CavalryLogger.start_js(["qu1rX"]); }
+
+var MusicDiagnostics=(function(){function a(c,b){return {time:new Date(),data:b,provider:c};}return {sendUpdate:function(d,c,b){Arbiter.inform('MusicDiagnostics/send',copy_properties(a(d,b),{op:c}));},receiveUpdate:function(c,b){Arbiter.inform('MusicDiagnostics/receive',copy_properties(a(c,b),{op:MusicConstants.STATUS_CHANGE_OP.STATUS}));},stateChanged:function(d,c,e,b){Arbiter.inform('MusicDiagnostics/state_change',copy_properties(a(d,b),{from:c,to:e}));},userAction:function(d,b,c){Arbiter.inform('MusicDiagnostics/user_action',copy_properties(a(d,c),{action:b}));},debug:function(c,d,b){Arbiter.inform('MusicDiagnostics/debug',copy_properties(a(c,b),{str:d}));},WINDOW_OPEN:'window_open',ATTEMPTING_LAUNCH:'launching',INSTALL_STARTED:'install_started',PLAY_SONG:'play_song',LAUNCH_NOT_NEEDED:'launch_not_needed',LAUNCH_CLICK_CANCEL:'launch_click_cancel',INSTALL_CLICK_CANCEL:'install_click_cancel',SWITCHED_PROVIDER:'switched_provider',TOS_SHOWN:'tos_shown',TOS_CLICK_CANCEL:'tos_click_cancel',LIVE_LISTEN_PLAY:'live_listen_play'};})();

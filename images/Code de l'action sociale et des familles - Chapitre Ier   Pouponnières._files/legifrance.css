@@ -1,0 +1,203 @@
+#legifrance ul {
+    margin: 0 0 0 21px;
+   list-style-type: none;
+}
+
+#legifrance ul li {
+   font-size: 12px;
+   padding: 5px 0 0 0;
+}
+
+#legifrance>ul {
+   padding: 5px 0 11px 0;
+}
+
+#legifrance ul.listecode li a {
+   font-size: 1.2em;
+   background-color: transparent;
+   background-image: url(/img/puce-vince.png);
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: 0pt -1px;
+   padding: 0 0 0 25px;
+}
+
+#contenu>hr {
+   clear: both;
+   visibility: hidden;
+}
+
+#legifrance .title {
+   text-align: center;
+}
+
+#legifrance .article {
+   font-size: 14px;
+   line-height: 18px;
+   text-align: justify;
+   margin: 0 30px 20px 30px;
+}
+
+#tit_nav {
+   border-bottom: 1px solid #CCC
+}
+
+#legifrance h1 {
+   font-size: 18px;
+   padding: 6px 0;
+   margin: 20px 0;
+   margin-top: 0;
+   text-align:center;
+   border-bottom: 1px solid #CCC;
+}
+#legifrance span.titre_art {
+    display:block;
+}
+#legifrance>ul+h1 {
+    border-top: 1px solid #CCC;
+}
+
+#legifrance .article p {
+   margin-top: 20px;
+}
+
+#legifrance span.art, #legifrance span.art_repli {
+   float: right;
+   margin:  0 0 0 6px;
+   width:155px;
+   height:16px;
+   font-size:  12px;
+}
+
+#legifrance ul.sommaire li a, #legifrance ul.sommaire li span.nolink {
+   display: block;
+}
+
+#legifrance .hide {
+    display:none;
+}
+
+#listecodeshowhide {
+   padding: 0 0 0 25px;
+}
+
+#legifrance ul.listecode li.tools a, #legifrance ul.liens li ul li a.action{
+   background-image: none;
+   padding: 0 0 0 9px;
+}
+
+#legifrance ul.listecode li.tools a span, #legifrance ul.liens li ul li a.action span {
+   display: block;
+   float: left;
+   background-image: url(/styles/sprite.gif?200812121644);
+   width: 14px;
+   height: 14px;
+   margin: 2px 0 0 3px;
+   padding: 0;
+}
+
+#legifrance ul.listecode li.tools{
+   padding-top:10px;
+}
+
+#legifrance ul.listecode li.tools a {
+   font-weight: bold;
+}
+
+#legifrance ul.listecode li.tools a {
+   text-decoration: none;
+}
+
+#legifrance ul.listecode li.tools a span.plus, #legifrance ul.liens li ul li a.action span.plus {
+   background-position: 0 -69px;
+}
+
+#legifrance ul.listecode li.tools a:hover span.plus, #legifrance ul.liens li ul li a.action:hover span.plus {
+   background-position: -27px -69px;
+}
+
+#legifrance ul.listecode li.tools a span.moins, #legifrance ul.liens li ul li a.action span.moins {
+   background-position: -13px -69px;
+}
+
+#legifrance ul.listecode li.tools a:hover span.moins, #legifrance ul.liens li ul li a.action:hover span.moins {
+   background-position: -40px -69px;
+}
+
+#legifrance ul.sommaire li  {
+   display:block;
+   width:100%;
+}
+
+#legifrance ul.sommaire li a  {
+   display:block;
+}
+
+#legifrance ul.sommaire li a span.section, #legifrance ul.sommaire li span.nolink span.section {
+   padding-left:20px;
+   display:block;
+   background: url(/template/blocs/bloc_42/li.png) no-repeat 0 4px;
+}
+
+#legifrance ul.sommaire li a span.section_plus {
+   padding-left:20px;
+   display:block;
+   background: url(/legifrance/plus.png) no-repeat 0 2px;
+}
+
+#legifrance ul.sommaire li a:hover span.section_plus {
+   background: url(/legifrance/plus_hover.png) no-repeat 0 2px;
+}
+
+#legifrance ul.sommaire li a span.section_moins {
+   padding-left:20px;
+   background: url(/legifrance/moins.png) no-repeat 0 2px;
+}
+
+#legifrance ul.sommaire li a:hover span.section_moins {
+   background: url(/legifrance/moins_hover.png) no-repeat 0 2px;
+}
+
+#legifrance span.lien {
+   padding-left:15px;
+   background: url(/legifrance/plus_art.png) no-repeat 0 2px;
+}
+
+#legifrance span.modification, span.creation {
+    display:block;
+    font-size: .6em;
+    font-weight: normal;
+    color: #AAA;
+}
+
+#legifrance span.etat {
+    display:block;
+    font-size: .8em;
+    font-weight: normal;
+    color: #AAA;
+}
+
+#legifrance span.modification a, span.creation a{
+    font-weight: normal;
+    color: #AAA;
+}
+#legifrance ul.plie li.plus { 
+    display: none
+}
+#legifrance ul.deplie li.plus { 
+    display: block
+}
+#legifrance ul.liens {
+margin: 0}
+
+#legifrance a {
+    color: #0000FF;
+}
+
+#legifrance .article ul.sommaire {
+   line-height: 18px;
+   margin: 0px;
+}
+#legifrance .article ul.sommaire span.art,#legifrance .article ul.sommaire span.section, #legifrance .article ul.sommaire span.art_repli {
+   font-size:  14px;
+}

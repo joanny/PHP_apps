@@ -1,0 +1,82 @@
+ <!--#WIDTH=728 #HEIGHT=90 #CREATIVETYPEID=4 #DELIVERYMETHODID=3--> 
+ 
+	document.write("<meta HTTP-EQUIV='expires' CONTENT='0'></meta>");
+	document.write("<meta HTTP-EQUIV='Pragma' CONTENT='no-cache'></meta>");
+	  
+var nRequiredVersion = 9; 
+var bIsRightVersion = false;	
+var isIE = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+if(isIE && isWin){
+document.writeln('<SCR' + 'IPT LANGUAGE=VBScript\>');
+document.writeln('on error resume next');
+document.writeln('Set oFlashPlayer = CreateObject("ShockwaveFlash.ShockwaveFlash." & nRequiredVersion)');
+document.writeln('If IsObject(oFlashPlayer) Then');
+document.writeln('bIsRightVersion = True');
+document.writeln('End If');
+document.writeln('If (Not bIsRightVersion) And (nRequiredVersion < 3) Then');
+document.writeln('Set oFlashPlayer = CreateObject("ShockwaveFlash.ShockwaveFlash")');
+document.writeln('If IsObject(oFlashPlayer) Then');
+document.writeln('bIsRightVersion = True');
+document.writeln('End If');
+document.writeln('End If');
+document.writeln('</SCR' + 'IPT\>'); 
+}
+function CheckSwfVer(){
+if (navigator.plugins != null && navigator.plugins.length > 0) {
+if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+var descArray = flashDescription.split(" ");
+var tempArrayMajor = descArray[2].split(".");	
+var versionMajor = tempArrayMajor[0];
+bIsRightVersion = (versionMajor >= nRequiredVersion);
+}
+}
+else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1)
+{
+bIsRightVersion = (4 >= nRequiredVersion);
+}
+else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1)
+{
+bIsRightVersion = (3 >= nRequiredVersion);
+}
+else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) 
+{
+bIsRightVersion = (2 >= nRequiredVersion);
+}
+}
+function detectFlashWWT1207238771238() 
+{ 
+if (!bIsRightVersion) {
+CheckSwfVer();
+}
+}
+detectFlashWWT1207238771238(); 
+  
+var _strContentWWT1207238771238 = '';
+if(bIsRightVersion) 
+{ 
+ 	var strFQDN = "http://ec.atdmt.com/ds/D9D9IWWTHWWT/";  
+var index = strFQDN.indexOf("/ds/");
+strFQDN = strFQDN.substring(0, index);
+_strContentWWT1207238771238 = '' + '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" width="728" height="90">'
++ '<param name="movie" value="http://ec.atdmt.com/ds/D9D9IWWTHWWT/AdNonSearch_DEC30/WW_Online_Janv2012_728x90_Peas_V2.swf?ver=1&clickTag1=http%3A%2F%2Faimfar.solution.weborama.fr%2Ffcgi-bin%2Fdiffclic.fcgi%3Fv%3D11052601%26idcli%3D4%26ids%3D196%26idc%3D27226%26ida%3D1233%26idcamp%3D1725%26ide%3D10415%26kp%3D%26iwi%3D0%26iwl%3D1%26iwh%3D1%26scnid%3D0%26URL%3Dhttp://clk.atdmt.com/go/368332767/direct;ai.254467966;ct.1/01&clickTag=http%3A%2F%2Faimfar.solution.weborama.fr%2Ffcgi-bin%2Fdiffclic.fcgi%3Fv%3D11052601%26idcli%3D4%26ids%3D196%26idc%3D27226%26ida%3D1233%26idcamp%3D1725%26ide%3D10415%26kp%3D%26iwi%3D0%26iwl%3D1%26iwh%3D1%26scnid%3D0%26URL%3Dhttp://clk.atdmt.com/go/368332767/direct;ai.254467966;ct.1/01" />'
++ '<param name="base" value="http://ec.atdmt.com/ds/D9D9IWWTHWWT/" />'
++ '<param name="quality" value="high" />'
++ '<param name="salign" value="lt" />'
++ '<param name="loop" value="true" />'
++ '<param name="wmode" value="opaque" />'
++ '<embed quality="high" salign="LT" loop="true" type="application/x-shockwave-flash" pluginspace="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" base="http://ec.atdmt.com/ds/D9D9IWWTHWWT/" wmode="opaque" src="http://ec.atdmt.com/ds/D9D9IWWTHWWT/AdNonSearch_DEC30/WW_Online_Janv2012_728x90_Peas_V2.swf?ver=1&clickTag1=http%3A%2F%2Faimfar.solution.weborama.fr%2Ffcgi-bin%2Fdiffclic.fcgi%3Fv%3D11052601%26idcli%3D4%26ids%3D196%26idc%3D27226%26ida%3D1233%26idcamp%3D1725%26ide%3D10415%26kp%3D%26iwi%3D0%26iwl%3D1%26iwh%3D1%26scnid%3D0%26URL%3Dhttp://clk.atdmt.com/go/368332767/direct;ai.254467966;ct.1/01&clickTag=http%3A%2F%2Faimfar.solution.weborama.fr%2Ffcgi-bin%2Fdiffclic.fcgi%3Fv%3D11052601%26idcli%3D4%26ids%3D196%26idc%3D27226%26ida%3D1233%26idcamp%3D1725%26ide%3D10415%26kp%3D%26iwi%3D0%26iwl%3D1%26iwh%3D1%26scnid%3D0%26URL%3Dhttp://clk.atdmt.com/go/368332767/direct;ai.254467966;ct.1/01" width="728" height="90" />'
++ '</object>'
++ '';
+} 
+else 
+{ 
+_strContentWWT1207238771238 = '<a target="_blank" href="http%3A%2F%2Faimfar.solution.weborama.fr%2Ffcgi-bin%2Fdiffclic.fcgi%3Fv%3D11052601%26idcli%3D4%26ids%3D196%26idc%3D27226%26ida%3D1233%26idcamp%3D1725%26ide%3D10415%26kp%3D%26iwi%3D0%26iwl%3D1%26iwh%3D1%26scnid%3D0%26URL%3Dhttp://clk.atdmt.com/go/368332767/direct;ai.254467966;ct.1/01"><img border="0" src="http://ec.atdmt.com/ds/D9D9IWWTHWWT/AdNonSearch_DEC30/WW_Online_Janv2012_728x90_Chicken_V2.gif?ver=1" width="728" height="90" /></a>';
+}
+ document.write(_strContentWWT1207238771238);
+
+document.write ('<script type="text/javascript" src="http://rs.adledge.com/aleagypkg" alepar="cltid=3815&advid=genrmd_advwwr1&cpgid=wwransc12_1201&pctid=NA&adid=NA&ctvid=NA&steid=368332767&stenm=368332767&ckeid=1318682711-22542460"></script>');
+document.write ('');
