@@ -1,0 +1,5 @@
+﻿Base de données du type WAMP.
+créer 
+	-une base données avec pour nom "my_stick"
+	-un utilisateur "sk"
+	-mot de passe EW8ah9tyWFqEt6X5
